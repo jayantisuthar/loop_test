@@ -2,10 +2,18 @@
 ## About Test Project
 
 ## Installation : 
+Add the following key values in .env 
+
+```
+#LOOP
+LOOP_USERNAME=loop
+LOOP_PASSWORD=backend_dev
+```
+
 - setup the database for the app and run the below command.
 - ``` php artisan migrate ```
  
-- To import customer run the following command.
+- To import customer run the following command. : as of now the implemetaion is in synchronius manner but for huge data set we can implement the **Batch Job Processing** 
 - ``` php artisan import:customers ```
 
 - To import products run the following commands

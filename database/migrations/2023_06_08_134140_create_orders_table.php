@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('customer');
+            $table->integer('customer');
             $table->boolean('payed')->default(false);
             $table->timestamp('created_at')->useCurrent();
+
+            $table->foreign('customer')->references('id')->on('customers')->onDelete('cascade');
         });
     }
 
