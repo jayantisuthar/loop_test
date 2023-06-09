@@ -10,11 +10,13 @@
 
 - To import products run the following commands
 - ``` php artisan import:products ```
+---
+#Postman request collection 
+[Download Postman Collection File](postman_collection.json)
 
-###Postman request collection 
-[a relative link](postman_collection.json)
+---
 
-###API resource endpoint for order api's where we can do the CRUD operation 
+## API resource endpoint for order api's where we can do the CRUD operation 
 here `{$order}` is the id of the order
 
 - `GET (http://127.0.0.1:8000/api/order)` : this api return all the order and if the filter is applied it return the customer 
